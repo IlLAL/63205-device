@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="product">
+        <h1>Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Каталог товаров</a></li>
+          <li><a href="#">Моноподы для селфи</a></li>
+        </ul>
+      </div>
+      <div class="filter">
+        <span>Фильтр</span>
+        <span>Стоимость</span>
+        <form class="filter" action="index.html" method="get">
+          <span>Цвет</span>
+          <fieldset>
+            <legend><ul>
+              <li><input type="checkbox" name="black" value="Черный"></li>
+              <li><input type="checkbox" name="white" value="Белый"></li>
+              <li><input type="checkbox" name="blue" value="Синий"></li>
+              <li><input type="checkbox" name="red" value="Красный"></li>
+              <li><input type="checkbox" name="pink" value="Розовый"></li>
+            </ul></legend>
+          </fieldset>
+        </form>
+         <span>Bluetooth</span>
+         <ul>
+           <li><input type="radio" name="on" value="Есть"></li>
+           <li><input type="radio" name="off" value="Нет"></li>
+           <!--4.5 Фильтр: по нажатию кнопки «Показать» осуществляется отправка формы.
+         ????-->
+         <button type="get" name="show" value="Показать"></button>
+         </ul>
+      </div>
+      <!--Как сделать фильтр????-->
+      <section class="sorter">
+        <span class="sorter">СОРТИРОВКА:</span>
+        <ul>
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По популярности</a></li>
+        </ul>
+        <h2><a href="#"><span class="selfi-stick1">любительская селфи-палка</span></a></h2>
+      </section>
+
+    </main>
+  </body>
+</html>
