@@ -6,45 +6,74 @@
   </head>
 
   <body>
-    <main class="container">
-      <div class="breadcrumbs">
-        <h1>Моноподы для селфи</h1>
-        <ul class="breadcrumbs">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Каталог товаров</a></li>
-          <li><a href="#">Моноподы для селфи</a></li>
-        </ul>
-       </div>
+    <header class="main-header">
+       <div class="container">
+         <div class="header-logo">
+         <img src="img/index-logo.png" width="100" height="200" alt="DEVICE"/>
+         </div>
 
-      <form class="filter" action="catalog.html" method="get">
+         <div class="user-block">
+           <a href="#">Валентин Петухов <img src="#" alt=""></a>
+           <a class="login" href="#">Выйти</a>
+           <a class="compare" href="#">Сравнить <img src="#" alt=""></a>
+           <a class="cart" href="#">Корзина <img src="#" alt=""></a>
+         </div>
+         <span><a href="#">каталог товаров</a></span>
+         <nav class="main-navigation">
+         <ul>
+          <li><a href="#">доставка</a></li>
+          <li><a href="#">гарантия</a></li>
+          <li><a href="#">доставка</a></li>
+         </ul>
+        </nav>
+     </div>
+  </header>
+
+    <main>
+      <div class="main-container">
+        <div class="breadcrumbs">
+          <h1>Моноподы для селфи</h1>
+             <ul class="breadcrumbs">
+               <li><a href="#">Главная</a></li>
+               <li><a href="#">Каталог товаров</a></li>
+               <li><a href="#">Моноподы для селфи</a></li>
+             </ul>
+          </div>
+        </div>
+
+      <form class="filter" action="\echo" method="get">
         <div class="filter">
-          <span>Фильтр</span>
-          <span>Стоимость</span>
+          <span>Фильтр:</span>
+          <span id="price">Стоимость</span>
+          <div id="price-ranger">
+            <div class="slider-range">
+            <div class="slider-range"></div>
+            <a class="slider-handle" href="#" style="left: 0%;"></a>
+            <a class="slider-handle" href="#" style="left: 96.9114%;"></a>
+            </div>
+           <div class="max-price" id="max-price">5000</div>
+           <div class="min-price" id="min-price">0</div>
+          </div>
+
           <span>Цвет</span>
           <fieldset>
-            <legend>
               <ul>
-              <li><input type="checkbox" name="black" value="Черный" ></li>
-              <li><input type="checkbox" name="white" value="Белый"></li>
-              <li><input type="checkbox" name="blue" value="Синий"></li>
-              <li><input type="checkbox" name="red" value="Красный"></li>
-              <li><input type="checkbox" name="pink" value="Розовый"></li>
-              </ul></legend>
-          </fieldset>
-         </form>
-      </div>
+              <li><label><input type="checkbox" name="black" value="Черный">Черный</label></li>
+              <li><label><input type="checkbox" name="white" value="Белый">Белый</label></li>
+              <li><label><input type="checkbox" name="blue" value="Синий">Синий</label></li>
+              <li><label><input type="checkbox" name="red" value="Красный">Красный</label></li>
+              <li><label><input type="checkbox" name="pink" value="Розовый">Розовый</label></li>
+              </ul>
+           </fieldset>
+           <span>Bluetooth</span>
+           <ul>
+             <li><label><input type="radio" name="bluetooth-on" value="Есть">Есть</label></li>
+             <li><label><input type="radio" name="bluetooth-off" value="Нет">Нет</label></li>
+             <button type="submit" name="show" value="Показать"></button>
+           </ul>
+     </div>
+   </form>
 
-         <span>Bluetooth</span>
-
-         <ul>
-           <li><input type="radio" name="on" value="Есть"></li>
-           <li><input type="radio" name="off" value="Нет"></li>
-           <!--4.5 Фильтр: по нажатию кнопки «Показать» осуществляется отправка формы.
-         ????-->
-         <button type="get" name="show" value="Показать"></button>
-         </ul>
-      </div>
-      <!--Как сделать фильтр????-->
       <section class="sort">
         <span class="sort">СОРТИРОВКА:</span>
         <ul>
@@ -52,17 +81,45 @@
           <li><a href="#">По типу</a></li>
           <li><a href="#">По популярности</a></li>
         </ul>
-        <h2><a href="#"><span class="selfi-stick1">любительская селфи-палка</span></a></h2>
+        <article class="selfie-stick">
+          <a href="#"><img src="#" alt="selfie-stick"></a>
+          <span class="selfie-stick">Любительская селфи-палка</span>
+          <span class="price selfie-stick"> 500 руб.</span>
+        </article>
+        <article class="prof-stick">
+          <a href="#"><img src="#" alt="prof-stick"></a>
+          <span class="prof-stick"><p>Профессиональная </p><p>селфи-палка</p></span>
+          <span class="price prof-stick"> 1500 руб.</span>
+        </article>
+        <article class="waterproof-stick">
+          <a href="#"><img src="#" alt="waterproof-stick"></a>
+          <span class="waterproof-stick">Непотопляемая селфи-палка</span>
+          <span class="price swaterproof-stick"> 2500 руб.</span>
+        </article>
+        <article class="followme-stick">
+          <a href="#"><img src="#" alt="followme-stick"></a>
+          <span class="followme-stick"><p>Селфи-палка </p><p>следуй за мной</p></span>
+          <span class="price followme-stick"> 4900 руб.</span>
+        </article>
+        <div class="slider-stick">
+          <button type="button" name="back">назад</button>
+          <ul>
+            <li><a href="#"></a>1</li>
+            <li><a href="#"></a>2</li>
+            <li><a href="#"></a>3</li>
+          </ul>
+          <button type="button" name="forward">вперед</button>
+        </div>
       </section>
-
+      </div>
     </main>
 
     <footer class="page-footer">
       <div class="container">
         <div class="user-block">
-          <a class="login" href="#">Войти</a>
-          <a class="compare" href="#">Сравнить</a>
-          <a class="trash" href="#">Корзина</a>
+          <a class="login" href="#">Войти<img src="#" alt=""></a>
+          <a class="compare" href="#">Сравнить<img src="#" alt=""></a>
+          <a class="trash" href="#">Корзина<img src="#" alt=""></a>
           <div class="index-logo">
             <img src="img/index-logo.png" width="100" height="200" alt="DEVICE">
           </div>

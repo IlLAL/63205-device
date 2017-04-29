@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+
     <title>DEVICE</title>
   </head>
 
@@ -13,19 +14,18 @@
          </div>
 
          <div class="user-block">
-          <a class="login" href="#">Войти</a>
-          <a class="compare" href="#">Сравнить</a>
-          <a class="cart" href="#">Корзина</a>
+           <a class="login" href="#">Войти <img src="#" alt=""></a>
+           <a class="compare" href="#">Сравнить <img src="#" alt=""></a>
+           <a class="cart" href="#">Корзина <img src="#" alt=""></a>
          </div>
 
          <form action="" method="get">
-          <input type="search" name="search-field" placeholder="Поиск по сайту" />
-          <input type="submit" name="search-field" value="Поиск"/>
+          <input type="search" name="search-field" placeholder="Поиск по сайту"/>
+          <img src="#" alt="Поиск"/>
          </form>
-
+         <span><a href="#">каталог товаров</a></span>
          <nav class="main-navigation">
          <ul>
-          <li><a href="#">каталог товаров</a></li>
           <li><a href="#">доставка</a></li>
           <li><a href="#">гарантия</a></li>
           <li><a href="#">доставка</a></li>
@@ -34,34 +34,35 @@
      </div>
   </header>
 
-  <main class="container">
-    <div class="product">
-      <span>Делай селфи, как Бен Стиллер!</span>
-      <div class="#">
-      <p>Самая длинная палка для селфи доступна в нашем магазине.
-      Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-      </div>
-       <a class="btn" href="#">подробнее</a>
-       <button class="btn dot1" type="button">#</button>
-       <button class="btn dot2" type="button">#</button>
-       <button class="btn dot3" type="button">#</button>
-        <ul class="details">
-          <li>8,5 м</li>
-          <li>5 кг</li>
-          <li>Карбон</li>
-          <li>Длина палки</li>
-          <li>Вес палки</li>
-          <li>Материал</li>
-        </ul>
+  <main>
+     <section class="container">
+       <div class="product">
+         <span>Делай селфи, как Бен Стиллер!</span>
+         <div class="#">
+           <p>Самая длинная палка для селфи доступна в нашем магазине.</p>
+           <p>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+         </div>
+         <div class="slider">
+            <a class="btn" href="#">подробнее</a>
+            <input type="radio" value="dot">
+            <input type="radio" value="dot">
+            <input type="radio" value="dot">
+        </div>
+        <div class="details">
+           <span><p>8,5 м</p><p>Длина палки</p></span>
+           <span><p>5 кг</p><p>Вес палки</p></span>
+           <span><p>Карбон</p><p>Материал</p></span>
+        </div>
         <div class="selfee-stick-image">
          <img src="http://placehold.it/150x100" alt="селфи палка"/>
         </div>
-    </div>
+      </div>
+    </section>
 
     <section class="all-products">
       <ul class="products">
         <li class="products-items"><img src="#" alt="Виртуальная реальность">
-        <a href="#"><h2>Виртуальная реальность</h2></a>
+        <a href="#">Виртуальная реальность</a>
         </li>
         <li class="products-items"><img src="#" alt="Моноподы для селфи">
         <a href="#">Моноподы для селфи</a>
@@ -84,9 +85,9 @@
     <section class="service">
       <button type="button-dilivery" name="button">Доставка</button>
       <span class="dilivery">Доставка</span>
-      <div class="#"><p>Мы с удовольствием доставим ваш товар прямо к вашему
-      подъезду совершенно бесплатно! Ведь мы неплохо
-      заработаем, поднимая его на ваш этаж. </p>
+      <div class="#"><p>Мы с удовольствием доставим ваш товар прямо к вашему</p>
+      <p>подъезду совершенно бесплатно! Ведь мы неплохо</p>
+      <p>заработаем, поднимая его на ваш этаж. </p>
       </div>
       <img src="#" alt="dilivery-boy"/>
       <button type="button-insurance" name="button">Гарантия</button>
@@ -103,38 +104,37 @@
     <section class="about-us">
         <div class="index-content-about">
           <h2 class="index-about-title">О нас</h2>
-          <div class="#"><p>
-            Огромный выбор гаджетов не оставит равнодушным гика,
-            который есть в каждом из нас.
-            Мы можем доставить ваш товар в самые отдаленные точки
-            России DEVICE работает со многими транспортными компаниями.
-          </p>
-        </div>
-        <ul class="about us">
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
+          <div class="#">
+            <p>Огромный выбор гаджетов не оставит равнодушным гика,</p>
+            <p>который есть в каждом из нас.</p>
+            <p>Мы можем доставить ваш товар в самые отдаленные точки</p>
+            <p>России DEVICE работает со многими транспортными компаниями.</p>
+          </div>
+            <ul class="about-us">
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
           <button type="button-about-us" name="button">Подробнее о нас</button>
         </div>
         <div class="index-contacts">
           <h2 class="index-contacts-title">Контакты</h2>
-          <div class="#"><p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
-          проверить работоспособность покупки. Всякое бывает.</p>
-        </div>
+          <div class="#">
+            <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете</p>
+            <p>проверить работоспособность покупки. Всякое бывает.</p>
+         </div>
           <a href="#"><img src="#" alt="map"/></a>
-        </div>
         <button type="button-write-us" name="button">Напиши нам</button>
       </section>
-
+    </div>
   </main>
 
   <footer class="page-footer">
     <div class="container">
       <div class="user-block">
-        <a class="login" href="#">Войти</a>
-        <a class="compare" href="#">Сравнить</a>
-        <a class="trash" href="#">Корзина</a>
+        <a class="login" href="#">Войти <img src="#" alt=""></a>
+        <a class="compare" href="#">Сравнить <img src="#" alt=""></a>
+        <a class="trash" href="#">Корзина <img src="#" alt=""></a>
         <div class="index-logo">
           <img src="img/index-logo.png" width="100" height="200" alt="DEVICE"/>
         </div>
@@ -154,6 +154,8 @@
         <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
         <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        <a href="#"><img src="https://htmlacademy.ru/intensive/htmlcss" alt="logo"/></a>
+
       </div>
       </div>
     </footer>
